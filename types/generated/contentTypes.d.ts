@@ -390,6 +390,7 @@ export interface ApiCourseCourse extends Schema.CollectionType {
     singularName: 'course';
     pluralName: 'courses';
     displayName: 'course';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -398,6 +399,11 @@ export interface ApiCourseCourse extends Schema.CollectionType {
     title: Attribute.String;
     description: Attribute.Text;
     images: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    price: Attribute.Decimal;
+    category: Attribute.Enumeration<
+      ['Front-End', 'Back-End', 'AI', 'Marketing']
+    >;
+    discount: Attribute.Decimal;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
