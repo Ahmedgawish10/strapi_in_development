@@ -93,6 +93,18 @@
           "localized": true
         }
       }
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::order.order",
+      "mappedBy": "courses"
+    },
+    "ordr": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ordr.ordr",
+      "inversedBy": "courses"
     }
   }
 }

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ahmeds",
+  "info": {
+    "singularName": "ahmed",
+    "pluralName": "ahmeds",
+    "displayName": "ahmed"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "age": {
+      "type": "string"
+    }
+  }
+}
